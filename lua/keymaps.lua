@@ -1,1 +1,8 @@
-vim.api.nvim_set_keymap('n', '<C-o>', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+-- General Keymaps
+
+local Utils = require('utils')
+
+local nnoremap = Utils.nnoremap
+
+-- File Explorer
+nnoremap('<C-o>', '<Cmd>NvimTreeToggle<CR>')
