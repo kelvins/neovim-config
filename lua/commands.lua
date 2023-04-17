@@ -9,3 +9,9 @@ vim.cmd('command! Q q')
 
 -- JSON Format
 vim.cmd('command! JSONFormat %!python -m json.tool')
+
+-- Auto close nvim-tree
+vim.api.nvim_create_autocmd('BufEnter', {
+    command = "if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif",
+    nested = true,
+})
