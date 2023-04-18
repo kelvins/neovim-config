@@ -66,4 +66,10 @@ return require('packer').startup(function(use)
     tag = '*',
     config = function() require('toggleterm').setup() end,
   }
+
+  -- Autocompletion
+  use {
+    'neoclide/coc.nvim',
+    branch = 'release'
+  }
 end)
