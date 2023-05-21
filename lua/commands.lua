@@ -1,6 +1,7 @@
 -- Define Commands
 
 vim.cmd [[autocmd FileType python set colorcolumn=80]]
+vim.cmd [[autocmd FileType scala set colorcolumn=80]]
 
 vim.cmd('command! WQ wq')
 vim.cmd('command! Wq wq')
