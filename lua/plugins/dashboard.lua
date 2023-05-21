@@ -16,14 +16,12 @@ require('dashboard').setup {
       {
         icon = ' ',
         desc = 'Files',
-        group = 'Label',
         action = 'Telescope find_files',
         key = 'f',
       },
       {
         icon = ' ',
         desc = 'Quit',
-        group = 'Actions',
         action = 'q!',
         key = 'q'
       }
