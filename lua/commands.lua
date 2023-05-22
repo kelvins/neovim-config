@@ -1,5 +1,4 @@
--- Define Commands
-
+-- Set color column for specific file types
 vim.cmd [[autocmd FileType python set colorcolumn=80]]
 vim.cmd [[autocmd FileType scala set colorcolumn=80]]
 

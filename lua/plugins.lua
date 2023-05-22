@@ -1,7 +1,7 @@
 -- Load Packer
 vim.cmd [[packadd packer.nvim]]
 
--- Rerun PackerCompile everytime pluggins.lua is updated
+-- Re-run PackerCompile everytime pluggins.lua is updated
 vim.cmd([[
   augroup packer_user_config
     autocmd!
@@ -9,15 +9,16 @@ vim.cmd([[
   augroup end
 ]])
 
--- Initialize Pluggins
+-- Initialize Plugins
 return require('packer').startup(function(use)
+  -- Use Packer itself
   use 'wbthomason/packer.nvim'
 
   -- Start Screen
   use {
     'glepnir/dashboard-nvim',
     event = 'VimEnter',
-    requires = {'nvim-tree/nvim-web-devicons'},
+    requires = 'nvim-tree/nvim-web-devicons',
     config = function() require('plugins.dashboard') end
   }
 
@@ -43,28 +44,28 @@ return require('packer').startup(function(use)
   }
 
   -- Markdown Preview
-  use({
+  use {
     'iamcco/markdown-preview.nvim',
-    run = function() vim.fn['mkdp#util#install']() end,
-  })
+    run = function() vim.fn['mkdp#util#install']() end
+  }
 
   -- Autopairs
   use {
     'windwp/nvim-autopairs',
-    config = function() require('nvim-autopairs').setup() end,
+    config = function() require('nvim-autopairs').setup() end
   }
 
   -- Comments
   use {
     'numToStr/Comment.nvim',
-    config = function() require('Comment').setup() end,
+    config = function() require('Comment').setup() end
   }
 
   -- Terminal
   use {
     'akinsho/toggleterm.nvim',
     tag = '*',
-    config = function() require('toggleterm').setup() end,
+    config = function() require('toggleterm').setup() end
   }
 
   -- Autocompletion

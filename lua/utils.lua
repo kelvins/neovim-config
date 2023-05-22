@@ -3,22 +3,16 @@
 local M = {}
 
 function M.map(mode, lhs, rhs)
-        vim.api.nvim_set_keymap(mode, lhs, rhs, {silent =  true})
+  vim.api.nvim_set_keymap(mode, lhs, rhs, {silent =  true})
 end
 
 function M.noremap(mode, lhs, rhs)
-        vim.api.nvim_set_keymap(mode, lhs, rhs, {noremap = true, silent = true})
+  vim.api.nvim_set_keymap(mode, lhs, rhs, {noremap = true, silent = true})
 end
 
 function M.exprnoremap(mode, lhs, rhs)
-        vim.api.nvim_set_keymap(mode, lhs, rhs, {noremap = true, silent = true, expr = true})
+  vim.api.nvim_set_keymap(mode, lhs, rhs, {noremap = true, silent = true, expr = true})
 end
-
--- Useful mode-specific shortcuts
--- nomenclature: "<expr?><mode><nore?>map(lhs, rhs)" where:
---      "expr?" optional expr option
---      "nore?" optional no-remap option
---      modes -> 'n' = NORMAL, 'i' = INSERT, 'x' = 'VISUAL', 'v' = VISUAL + SELECT, 't' = TERMINAL
 
 function M.nmap(lhs, rhs) M.map('n', lhs, rhs) end
 
