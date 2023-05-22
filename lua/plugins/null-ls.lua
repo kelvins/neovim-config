@@ -20,5 +20,10 @@ null_ls.setup {
     null_ls.builtins.formatting.scalafmt,
     null_ls.builtins.formatting.joker,
     null_ls.builtins.formatting.rustfmt,
+
+    -- Completion
+    null_ls.builtins.completion.spell,
   }
 }
+
+return null_ls
