@@ -9,6 +9,6 @@ Neovim configuration using Lua.
 Clone the repo into Neovim's installation folder:
 
 ```bash
-git clone https://github.com/kelvins/neovim-lua-config ~/.config/nvim
+git clone https://github.com/kelvins/neovim-config ~/.config/nvim
 cd ~/.config/nvim
 ```
