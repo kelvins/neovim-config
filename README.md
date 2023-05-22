@@ -1,6 +1,6 @@
-# :skull_and_crossbones: Neovim Config
+# :moon: Neovim Config
 
-Neovim configuration using Lua.
+This repository contains a Neovim configuration written in Lua. It provides a customized setup for Neovim, leveraging the power and flexibility of Lua scripting.
 
 > Inspired by [miltonllera/neovim-config](https://github.com/miltonllera/neovim-config)
 
