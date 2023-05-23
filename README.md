@@ -8,6 +8,10 @@ This README might help you (and me) get things set up on a new machine.
 
 ## Neovim Installation
 
+Recommended versions:
+- Neovim >= `v0.9.0`
+- NodeJS >= `v18.16.0`
+
 ### Linux
 
 On **Ubuntu** you can simply install it using `apt install`:
@@ -21,6 +25,8 @@ Or, if you're using **Arch Linux**, you can install it using `pacman`:
 ```sh
 sudo pacman -S neovim
 ```
+
+> You can also try to use `snap` to install the latest Neovim version
 
 ### MacOS
 
