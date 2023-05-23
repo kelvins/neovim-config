@@ -10,6 +10,9 @@ null_ls.setup {
     null_ls.builtins.diagnostics.clj_kondo,
     null_ls.builtins.diagnostics.clang_check,
     null_ls.builtins.diagnostics.cppcheck,
+    null_ls.builtins.diagnostics.markdownlint,
+    null_ls.builtins.diagnostics.selene,
+    null_ls.builtins.diagnostics.staticcheck,
 
     -- Formatting
     null_ls.builtins.formatting.isort,
